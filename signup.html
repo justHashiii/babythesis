@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Signup</title>
+    <link rel="stylesheet" href="../css/signupstyle.css">
+</head>
+
+<body>
+    <header>
+        <h1>LIBRARY ATTENDANCE SYSTEM</h1>
+    </header>
+
+    
+    <main>
+        <div class="container">
+            <h2>Register Now!</h2>
+
+            <form action="../php/signup.php" method="POST"> <!-- basta toplokon ang SignUp, sa signup.php na padulong -->
+                <label for="first_name">First Name*</label>
+                <input type="text" name="first_name" required>
+
+                <label for="middle_name">Middle Name*</label>
+                <input type="text" name="middle_name" required>
+
+                <label for="last_name">Last Name*</label>
+                <input type="text" name="last_name" required>
+
+                <label for="course">Strand/Course*</label>
+                    <select name="course" required>
+                        <option value="">-- Select Course --</option>
+                        <option>BSIT</option>
+                        <option>BSBA</option>
+                        <option>BEED</option>
+                        <option>BSED</option>
+                        <option>BSCRIM</option>
+                        <option>ICT</option>
+                        <option>HUMSS</option>
+                        <option>ABM</option>
+                        <option>STEM</option>
+                        <option>JUNIOR HIGH</option>
+                        <option>SENIOR HIGH</option>
+                        <option>FACULTY</option>
+                        <option>STAFF</option>
+                        <option>VISITOR</option>
+                        <option>STRAND/COURSE</option>
+                    </select>
+
+                <label for="year_level">Year/Grade*</label>
+                <input type="text" name="year_level" required>
+
+                <label for="student_id">Student ID Number*</label>
+                <input type="text" name="student_id" required>
+
+                <button type="submit">Sign Up</button>
+            </form>
+
+            <div class="back">
+                <a href="../php/index.php">← Back to Home</a>
+            </div>
+        </div>
+    </main>
+
+
+    <footer> HOLY CHILD COLLEGE OF DAVAO</footer>
+</body>
+</html>

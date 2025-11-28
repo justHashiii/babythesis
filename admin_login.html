@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Signup</title>
+    <link rel="stylesheet" href="../css/adminstyle.css">
+</head>
+
+<body>
+    <header>
+        <h1>LIBRARY ATTENDANCE SYSTEM</h1>
+    </header>
+    <main>
+        
+        <div class="left-panel"> <!-- LEFT -->
+            <div class="form-box">
+                <img src="../img/holychildlogo.png" alt="Holy Child Logo">
+                <h1>Administrator</h1>
+
+               <form action="../php/admin_login.php" method="POST">
+                    <input type="password" name="password" placeholder="Please enter a password" required style="padding: 8px; margin-bottom: 16px;">
+                    <button type="submit">Login</button>
+
+                    <div class="divider">OR</div>
+
+                    <div class="back">
+                        <a href="../php/index.php">← Back to Home</a>
+                    </div>
+                    <?php if (isset($_GET['error'])): ?>
+                        <p style="color:red; text-align:center;">
+                            <?php echo $_GET['error']; ?>
+                        </p>
+                    <?php endif; ?>
+
+                </form>
+
+            </div>
+        </div>
+    </main>
+
+
+    <footer> HOLY CHILD COLLEGE OF DAVAO</footer>
+</body>
+</html>

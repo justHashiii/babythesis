@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+main {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(../img/holysheesh.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+
+header {
+    width: 100%;
+    background-color: #262261;
+    padding: 1.5rem 0;
+    text-align: center;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+
+
+.left-panel {   /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> LEFT */
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-box {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    width: 80%;
+}
+
+.form-box img {
+    width: 100px;
+    margin-bottom: 1rem;
+}
+
+.form-box h1 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background-color: #4267B2;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+  background-color: #0B1DB2;
+}
+
+
+
+
+
+.divider { /*THE   ----------- OR -----------   part*/
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #999;
+    margin: 1rem 0;
+}
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 0.0625rem solid #ccc; /*1px*/
+}
+.divider::before {
+    margin-right: 0.5em;
+}
+.divider::after {
+    margin-left: 0.5em;
+}
+
+
+
+
+
+
+
+/*Lord tabang*/
+footer {
+    background-color: #ec2028;
+    color: black;
+    padding: 1rem;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    gap: 2rem; /*space between links*/
+}
+
+
+
+
+/*RESPONSIIIIIIIIIIIIVE!*/
+@media screen and (max-width: 768px) {
+.container {
+    flex-direction: column;
+    height: auto;
+}
+
+.logo {
+    flex: 2;
+    padding: 1rem;
+}
+
+.login {
+    flex: 4;
+    padding: 1rem;
+}
+
+#logoedit {
+    height: 20vh;
+}
+
+.login form {
+    width: 90%;
+    max-width: 100%;
+}
+
+footer {
+    background-color: #ec2028;
+    color: black;
+    padding: 1rem;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    gap: 2rem; /*space between links*/
+}
+}
+
+
+
+
+
+@media screen and (max-width: 480px) {
+.login form {
+    width: 100%;
+}
+
+.login input[type="text"],
+.login input[type="password"],
+.login button[type="submit"] {
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+footer {
+    background-color: #ec2028;
+    color: black;
+    padding: 1rem;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    gap: 2rem; /*space between links*/
+}
+}
